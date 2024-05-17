@@ -1,9 +1,9 @@
 import React from 'react'
 import { useFetch } from '../useFetch'
 
-function GithubContainer({login}) {
+function GithubContainer({username}) {
     const { loading, data, error } = useFetch(
-        `https://api.github.com/users/${login}`
+        `https://api.github.com/users/${username}`
       );
       if (loading) return <h1>Loading...</h1>;
       if (error) return <pre>{JSON.stringify(error, null, 2)}</pre>;

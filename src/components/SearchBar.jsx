@@ -1,18 +1,18 @@
-import React, {useState, useEffect} from 'react'
+import {useState} from 'react'
 
-function SearchBar({searchVal, placeHolder}) {
+function SearchBar({setUsername, placeHolder}) {
 
   const [inputText, setInputText] = useState({
     searchTerm: "",
   });
   
   const handleChange = (event) => {
-    setInputText({...inputText, [event.target.name]: [event.target.value] });
+    setInputText({...inputText, [event.target.name]: event.target.value });
   }
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    searchVal(inputText.searchTerm);
+    setUsername(inputText.searchTerm);
   }
   return (
     <>
