@@ -6,19 +6,19 @@ import GithubContainer from './components/GithubContainer';
 
 function App() {
 
-  const [github, setGithub] =useState(null);//hold the github json info here
+  const [username, setUsername] =useState("");//hold the github json info here
  
 
 
-  const getGitByName = (searchTerm) => {
+  const getGitByUsername = (searchTerm) => {
 
   }
 
   return (
     <>
-      <h1>Find Your Friends on Github!</h1>
-      <SearchBar searchVal={getGitByName} placeHolder="Enter Full Name..."/>
-      <GithubContainer login="pr204fl"/>
+      <h1>Know Your Github Status!</h1>
+      <SearchBar searchVal={getGitByUsername} placeHolder="Enter Github Username..."/>
+      <GithubContainer login="pr2014fl"/>
     </>
   )
 }
