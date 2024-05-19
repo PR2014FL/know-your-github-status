@@ -16,9 +16,9 @@ function SearchBar({setUsername, placeHolder}) {
   }
   return (
     <>
-    <form onSubmit={handleSubmit}>
-        <input type="text" name="searchTerm" onChange={handleChange} value={inputText.searchTerm} placeholder={placeHolder}/>
-        <input type="submit" value="submit" />
+    <form className="searchBarDiv" onSubmit={handleSubmit}>
+        <input className="textbox"type="text" name="searchTerm" onChange={handleChange} value={inputText.searchTerm} placeholder={placeHolder}/>
+        <input className="button" type="submit" value="submit" />
     </form>
     </>
   )

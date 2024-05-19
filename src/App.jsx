@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <h1>Know Your Github Status!</h1>
+      <h1>Know Your Github Status</h1>
       <SearchBar setUsername={setUsername} placeHolder="Enter Github Username..."/>
       <GithubContainer username={username}/>
     </>
